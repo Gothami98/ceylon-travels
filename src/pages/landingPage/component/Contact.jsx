@@ -17,7 +17,6 @@ export function Contact() {
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <Badge className="mb-4 bg-emerald-100 text-emerald-800">Contact</Badge>
           <h2 className="text-4xl font-bold mb-4 text-gray-900">Get in Touch</h2>
           <p className="text-xl text-gray-600">Have questions? We'd love to hear from you!</p>
         </div>

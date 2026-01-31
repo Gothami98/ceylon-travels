@@ -9,7 +9,6 @@ export function Blog() {
     <section id="blog" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-emerald-100 text-emerald-800">Blog</Badge>
           <h2 className="text-4xl font-bold mb-4 text-gray-900">Travel Blog</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Tips, guides and inspiration for your Sri Lankan adventure
@@ -41,6 +40,13 @@ export function Blog() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+
+        <div className="text-center mt-12">
+          <Button variant="outline" size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg py-6 ">
+            Read More <ChevronRight className="w-4 h-4 ml-2" />
+          </Button>
         </div>
       </div>
     </section>

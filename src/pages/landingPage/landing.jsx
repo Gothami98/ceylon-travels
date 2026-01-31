@@ -8,6 +8,8 @@ import {Experiences} from "./component/Experiences.jsx"
 import {Blog} from "./component/Blog.jsx"
 import {Contact} from "./component/Contact.jsx"
 import {Footer} from "./component/Footer.jsx"
+import WhatsAppFab from "@/components/ui/WhatsAppFab";
+import WhyShowcase from "./component/Whyshowcase.jsx"
 
 
 export default function Landing() {
@@ -17,12 +19,14 @@ export default function Landing() {
       <Hero />
       <Welcome />
       <WhySriLanka />
+      <WhyShowcase />
       <Destinations />
       <TourPackages />
       <Experiences />
       <Blog />
       <Contact />
       <Footer />
+      <WhatsAppFab />
     </div>
   )
 }

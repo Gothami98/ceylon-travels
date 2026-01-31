@@ -4,17 +4,21 @@ import { ChevronRight } from "lucide-react";
 
 export function Hero() {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center bg-gradient-to-r from-emerald-900 to-teal-800 mt-16">
-      <div 
-    className="absolute inset-0  bg-black opacity-70" 
-    style={{
-      backgroundImage: "url('https://voyaztravel.com/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-18-at-08.38.08.jpeg')", 
-      backgroundSize: 'cover', 
-      backgroundPosition: 'center'
-    }}>
-      </div>
+    <section id="home" className="h-screen flex items-center justify-center">
+      <video 
+        className="absolute inset-0 w-full h-full object-cover" 
+        autoPlay 
+        muted 
+        loop
+      >
+        <source src="src/assets/video/srilanka.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {/* <div 
+        className="absolute inset-0 bg-black opacity-70"
+      >
+      </div> */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl">
-        <Badge className="mb-4 bg-emerald-600 text-yellow-100">Explore Paradise</Badge>
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
           Discover the Pearl of the Indian Ocean
         </h1>

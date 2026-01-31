@@ -9,8 +9,7 @@ export function TourPackages() {
     <section id="packages" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-emerald-100 text-emerald-800">Packages</Badge>
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">Our Tour Packages</h2>
+         <h2 className="text-4xl font-bold mb-4 text-gray-900">Our Tour Packages</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Carefully crafted experiences to suit every traveler's dream
           </p>
@@ -24,10 +23,7 @@ export function TourPackages() {
                   src={pkg.image} 
                   alt={pkg.title} 
                   className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500" 
-                />
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-emerald-600 text-white text-lg px-3 py-1">{pkg.price}</Badge>
-                </div>
+                />               
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-gray-900">{pkg.title}</h3>
@@ -42,12 +38,14 @@ export function TourPackages() {
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">{pkg.highlights}</p>
-                <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
-                  View Details <ChevronRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
+                </CardContent>
             </Card>
           ))}
+        </div>
+         <div className="text-center mt-12">
+          <Button variant="outline" size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg py-6">
+             More Packages <ChevronRight className="w-4 h-4 ml-2" />
+          </Button>
         </div>
       </div>
     </section>
